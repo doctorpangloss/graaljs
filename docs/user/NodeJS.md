@@ -67,6 +67,11 @@ $GRAALVM_HOME/bin/npm install <package>
 
 As the `npm` command of GraalVM is largely compatible with NPM, packages will be installed in the `node_modules` folder, as expected.
 
+For packages that use native addons, build from sources with the GraalVM environment:
+```shell
+$GRAALVM_HOME/bin/npm install --nodedir="${$GRAALVM_HOME}/languages/js" --build-from-source <package>
+```
+
 ### Installing `npm` Packages Globally
 
 Node packages can be installed globally using `npm` and the `-g` option.
